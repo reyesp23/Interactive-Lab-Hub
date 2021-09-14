@@ -51,7 +51,7 @@ F) [Record the interaction](#part-f-record)
 
 \*\***Include a picture of your storyboard here**\*\*
 
-<img src="./Storyboard.JPG">
+<img src="./Storyboard.JPG" width="750">
 
 
 \*\***Summarize feedback you got here.**\*\*
@@ -91,16 +91,16 @@ Different feedback from ourselves and other peers include:
 
 \*\***Include your first attempts at recording the set-up video here.**\*\*
 
-<img src="./1_Wizard.JPG">
-<img src="./2_Wizard.JPG">
-<img src="./4_Wizard.JPG">
-<img src="./5_Wizard.JPG">
+<img src="./1_Wizard.JPG" width="500">
+<img src="./2_Wizard.JPG" width="500">
+<img src="./4_Wizard.JPG" width="500">
+<img src="./5_Wizard.JPG" width="500">
 
 
 \*\***Show the follow-up work here.**\*\*
 
-<img src="./Wizard_1.GIF">
-<img src="./Wizard_2.GIF">
+<img src="./Wizard_1.GIF" width="500">
+<img src="./Wizard_2.GIF" width="500">
 
 
 ## Part E. Costume the device
@@ -140,6 +140,30 @@ You will be assigned three partners from another group. Go to their github pages
 
 \*\***Summarize feedback from your partners here.**\*\*
 
+The feedback received for this device can be summarized by the following: 
+
+Positive feedback
+> The physicality of the light lowering, as the night goes down, is a cool feature. 
+
+> As someone who tends to stay up because I don't realize how late it is, I definitely appreciate this device!
+
+> Not only does this device change the light environment around users, but reminds people to sleep in an immersive way
+
+Food for thought / Suggestions for change
+> Human schedules are complex, and simply reducing light may not work for those without a strict schedule. 
+
+> Bedtimes are variable, and so syncing with someone's calendar may be valuable.
+
+> There is a lack of clarity of when the lamp raises up after lowering at the end of the night.
+
+> With a lamp so close to the ground, users may trip over it if they awake in the middle of the night.
+
+> Is there any integration with the other lights in the house? What happens to those? 
+
+> Changing colors / reducing blue light specifically could be a good way to induce sleep.
+
+> Is there a snooze button? What is I struggle to wake-up. 
+
 ## Make it your own
 
 Do last week’s assignment again, but this time: 
@@ -148,3 +172,41 @@ Do last week’s assignment again, but this time:
 3) We will be grading with an emphasis on creativity. 
 
 \*\***Document everything here. (Particularly, we would like to see the storyboard and video, although photos of the prototype are also great.)**\*\*
+
+Given the feedback received, the following changes will be implemented: 
+1. The device will work not just in the evenings to help users fall asleep, but also in the morning to help users wake up. This creates a "whole cycle" and addresses the concerns about when the lamp will raise after the user goes to sleep. 
+2. We will introduce an app that allows users to set the bedtime and wake up time. Some of the key features include: 
+    > Bedtime and wake-up can be changed within a single cycle (e.g., if it is 9:00pm, and a user planned to go to bed at 10:00pm, but now  need to go to bed at 11:00pm, the user can go into the app and change the bedimte accordingly). This will help with the complexity of a user's schedule on a day to day basis. 
+    
+    > Calendar integration will be possible (e.g., sync with Outlook calendar). 
+    
+    > For the wake-up functionality, there will be a built in "snooze" feature. Rather than a user clicking snooze in the morning, this will be proactive. So for example, a user will input 7:00 am as a wake-up time, but begin the wake-up process at 6:45am and have a "final wake-up allowed" at 7:15am. This is defined as the time interval. 
+    
+    > If the user has any other "smart lightbulbs" in the house, this device can sync with those. Although they may not have a dimming feature, the app can turn off each of the additional lights across the dimming cycle (and the user can program this sequence). So for example, if a user is going to bed in 4 hours, 3 hours beforehand the kitchen light can turn off, 2 hours beforehand the dining room light can shut off, and so on. Given the sophistication, it is not reflected in the diagrams below, but we do plan this for future iterations potentially. 
+3. The light used in the lamp will have the functionality to include or exclude blue light. Therefore, at night time, blue light can be removed (something that has been showed to keep people awake at night). 
+4. The light can allow a user to change the hue (e.g., more of a yellow / warm light versus a white / brighter light). 
+5. A speaker will be built into the lamp, so that intervals can be announced (rather than the light dimming, for example). So the device will audibly project "30 minutes until bedtime," in case the user does not consciously perceive the brightness decrease. 
+6. The light will have a feature to blink, specifically for waking up. Therefore, if the sound does not wake a user, the blinking light will help do so. 
+
+
+### Updated Storyboard
+
+We've created a new "storyboard" that shows the wake-up functionality of the device, along with its new sound feature. 
+
+As you can see below, as bedtime neard the light lowers physically, gets less bright, and informs the user of time until bedtime (with lower volume levels). 
+
+<img src="./Storyboard_New.jpg" width="750">
+<img src="./App_New.jpg" width="500">
+
+### Updated Device
+
+The new device can be found below. Also included is the sketch of the app we intend users to utilize for the scheduling of their bedtime and wake-up. The diagram of the device shows the ability to change hues for the light, the sound functionality included, and the lack of physical controls now on the device. The app shows that the user can set a bedtime and wake-up time, a time interval (how long for the bedtime process and how long for the wake-up process), ability to sync calendars. 
+
+<img src="./Device_New.jpg" width="700">
+### Updated Video
+
+This new video showcases the "wake-up timer" feature of the device. The link below shows the user being alerted 1 hour before wakeup (with low level light and sound alerting the user), 30 minutes before wakeup (with medium level light and sound alerting the user), and at wakeup (with high level light that blinks and sound alerting the user). 
+
+https://www.youtube.com/watch?v=zcFsXC-6AEg&feature=youtu.be
+
+
