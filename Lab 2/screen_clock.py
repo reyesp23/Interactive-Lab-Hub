@@ -1,4 +1,5 @@
 import time
+from time import strftime, sleep
 import subprocess
 import digitalio
 import board
@@ -47,13 +48,11 @@ disp.image(image, rotation)
 padding = -2
 top = padding
 bottom = height - padding
-# Move left to right keeping track of the current x position for drawing shapes.
-x = 0
 
 # Alternatively load a TTF font.  Make sure the .ttf font file is in the
 # same directory as the python script!
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
-font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 18)
+font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 44)
 
 # Turn on the backlight
 backlight = digitalio.DigitalInOut(board.D22)
@@ -65,6 +64,10 @@ while True:
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
 
     #TODO: Lab 2 part D work should be filled in here. You should be able to look in cli_clock.py and stats.py 
+    timeToTell = strftime("%H:%M:%S")
+    y = top + (height - font.getsize(timeToTell)[1]) / 2
+    x = 0 + (width - font.getsize(timeToTell)[0]) / 2
+    draw.text((x,y), timeToTell, font=font, fill="#FFFFFF")
 
     # Display image.
     disp.image(image, rotation)
