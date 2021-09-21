@@ -167,7 +167,7 @@ Now you should be able to edit python scripts with Thonny on your Pi.
 ### Demo
 The source code was modified to show the time centered in the screen.
 
-<img src="./screen_clock.JPG">
+<img src="./screen_clock.jpg">
 
 ## Part E.
 ### Modify the barebones clock to make it your own
