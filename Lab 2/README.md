@@ -164,6 +164,10 @@ Option 2. Another way for you to edit scripts is to use VNC on your laptop to re
 
 Now you should be able to edit python scripts with Thonny on your Pi.
 
+### Demo
+The source code was modified to show the time centered in the screen.
+
+<img src="./screen_clock.JPG">
 
 ## Part E.
 ### Modify the barebones clock to make it your own
