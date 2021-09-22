@@ -1,4 +1,5 @@
 import time
+import math
 from time import strftime, sleep
 import subprocess
 import digitalio
@@ -52,23 +53,65 @@ bottom = height - padding
 # Alternatively load a TTF font.  Make sure the .ttf font file is in the
 # same directory as the python script!
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
-font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 44)
+font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 30)
+font_r = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 17)
 
 # Turn on the backlight
 backlight = digitalio.DigitalInOut(board.D22)
 backlight.switch_to_output()
 backlight.value = True
-
+seconds = 60
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
+    
+    # Calculate time dilation
+    c = 300000 #Speed of light
+    r = 0.9 #Ratio
+    v = r*c #Traveler speed
+    t_dil = 1 / math.sqrt((1-v**2/c**2)) #Time dilation
+    text = str(r*100) + "% c"
+    
+    # Display countdown
+    y_label = top + (height - font.getsize(str(seconds))[1]) / 2 + 35
+    x_label = 0 + (width - font.getsize(str(seconds))[0]) / 2
+    draw.text((x_label,y_label), str(seconds), font=font, fill="#FFFFFF")
+    
+    # Display speed
+    draw.text((width-font_r.getsize(text)[0]-10, bottom-30), text, font=font_r, fill="#888888")
 
-    #TODO: Lab 2 part D work should be filled in here. You should be able to look in cli_clock.py and stats.py 
-    timeToTell = strftime("%H:%M:%S")
-    y = top + (height - font.getsize(timeToTell)[1]) / 2
-    x = 0 + (width - font.getsize(timeToTell)[0]) / 2
-    draw.text((x,y), timeToTell, font=font, fill="#FFFFFF")
-
+    
+    tick = "."
+    
+    if seconds > 0:
+        x_bar = 10
+        y_bar = -10
+        for i in range(seconds):
+            if i > 19: break
+            x_bar += font.getsize(tick)[0]
+            draw.text((x_bar, y_bar), tick, font = font, fill = "#00ffff")
+   
+    if seconds > 20:  
+        x_bar = 10
+        y_bar += font.getsize(tick)[1]
+        for i in range(seconds - 20):
+            if i > 19: break
+            x_bar += font.getsize(tick)[0]
+            draw.text((x_bar, y_bar), tick, font = font, fill = "#00ffff")
+            
+    if seconds > 40:  
+        x_bar = 10 
+        y_bar += font.getsize(tick)[1]
+        for i in range(seconds - 40):
+            if i > 19: break
+            x_bar += font.getsize(tick)[0]
+            draw.text((x_bar, y_bar), tick, font = font, fill = "#00ffff")
+    
     # Display image.
     disp.image(image, rotation)
-    time.sleep(1)
+    
+    #Counter
+    if seconds > 1: seconds -= 1
+    else: seconds = 60
+
+    time.sleep(t_dil)
