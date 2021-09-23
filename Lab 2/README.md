@@ -179,21 +179,6 @@ The idea is to design a clock that receives speed (or percentage relative to the
 
 <img src="./einsteins_clock.jpg">
 
-**We strongly discourage and will reject the results of literal digital or analog clock display.**
-
-\*\*\***A copy of your code should be in your Lab 2 Github repo.**\*\*\*
-
-After you edit and work on the scripts for Lab 2, the files should be upload back to your own GitHub repo! You can push to your personal github repo by adding the files here, commiting and pushing.
-
-```
-(circuitpython) pi@ixe00:~/Interactive-Lab-Hub/Lab 2 $ git add .
-(circuitpython) pi@ixe00:~/Interactive-Lab-Hub/Lab 2 $ git commit -m 'your commit message here'
-(circuitpython) pi@ixe00:~/Interactive-Lab-Hub/Lab 2 $ git push
-```
-
-After that, Git will ask you to login to your GitHub account to push the updates online, you will be asked to provide your GitHub user name and password. Remember to use the "Personal Access Tokens" you set up in Part A as the password instead of your account one! Go on your GitHub repo with your laptop, you should be able to see the updated files from your Pi!
-
-
 ## Part F. 
 ## Make a short video of your modified barebones PiClock
 
