@@ -169,12 +169,15 @@ The source code was modified to show the time centered in the screen.
 
 <img src="./screen_clock.jpg">
 
-## Part E.
-### Modify the barebones clock to make it your own
+## Part E. Einstein's Clock
 
-Does time have to be linear?  How do you measure a year? [In daylights? In midnights? In cups of coffee?](https://www.youtube.com/watch?v=wsj15wPpjLY)
+Let's look at a classic example: There is a set of twins that live on earth, they both have the exact same clocks in sync. One of the twins is a space traveler and leaves on mission traveling at 95% the speed of light. Upon returning the traveler's clock has measured ten years. However, when reuniting whith his brother, the twin that stayed on Earth has aged 32 years. This is explained due to the fact that the traveler was going at relativistic speeds and therefore his clock goes slower when compared against time on Earth. "Time is not absolute, it depends on the reference frame. 
 
-Can you make time interactive? You can look in `screen_test.py` for examples for how to use the buttons.
+When I first learned about this topic on my physics classes, it was a mindblowing concept and I found it really hard to visualize. We are used to see time as a constant and as a matter of fact, it is not. The motivation behind my project is to design an interactive way to visualize how time would pass for the traveler as compared to time on Earth. 
+
+The idea is to design a clock that receives speed (or percentage relative to the speed of light) and calculates time dilation to show how time would feel when travelling at that speed. The idea is to have two of the same devices, one for each twin on the example, and change the speed on one of them to be close to the speed of light. After one minute on stationary clock, you can compare both and see how many "ticks" are left on each. The same solution can be implemented with two different modes on the same device to navigate between stationary clock and traveler's clock. This project can become interactive by adding buttons to change the speed or even adding sensors (GPS, Accelerometer).
+
+<img src="./einsteins_clock.jpg">
 
 **We strongly discourage and will reject the results of literal digital or analog clock display.**
 
@@ -194,7 +197,7 @@ After that, Git will ask you to login to your GitHub account to push the updates
 ## Part F. 
 ## Make a short video of your modified barebones PiClock
 
-\*\*\***Take a video of your PiClock.**\*\*\*
+https://www.youtube.com/watch?v=u5Xrk0aN-iY
 
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
