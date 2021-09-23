@@ -189,10 +189,19 @@ The idea is to design a clock that receives speed (or percentage relative to the
 https://www.youtube.com/watch?v=u5Xrk0aN-iY
 
 ## Part G. 
-## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
-The same solution can be implemented with two different modes on the same device to navigate between stationary clock and traveler's clock. 
-This project can become interactive by adding buttons to change the speed or even adding sensors (GPS, Accelerometer).
+## Future improvements
+
+The buttons can be used to change the percentage of the speed of light and see how time channges
+
 I would like to change the UI to make improve the visual communication
+
+The main interaction is designed for two players (or more) players to replicate the example of the twin brothers since time dilation only makes sense when there is a stationary clock (or reference point) and a moving clock. However the same solution can be implemented with two different modes on the same device to navigate between stationary clock and traveler's clock to allow single players to experiment with the concept.
+
+## Interaction ideas
+
+This project can become interactive by adding sensors to measure (calculate) speed.
+
+One of the players can wear the device and run as fast as he can around the park. When he returns and compares the clock against the stationary player he sees that less time has passed for him. He has more "ticks" left in his clock. We can adjust the formula with a factor to make it sensisble to the measured (human) speeds instead of relativistic speeds for demonstration purposes.
 
 # Prep for Part 2
 
