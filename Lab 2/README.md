@@ -179,7 +179,7 @@ This concept is known as time dilation and its formula is simple to compute. The
 
 When I first learned about this topic on my physics classes, it was mindblowing and I found it really hard to visualize. We are used to see time as a constant and as a matter of fact, it is not. The motivation behind my project is to design an interactive way to visualize how time would pass for the traveler as compared to time on Earth. 
 
-The idea is to design a clock that receives speed (or percentage relative to the speed of light) and calculates time dilation to show how time would feel when travelling at that speed. The idea is to have two of the same devices, one for each twin on the example, and change the speed on one of them to be close to the speed of light. After one minute on stationary clock, you can compare both and see how many "ticks" are left on each. The same solution can be implemented with two different modes on the same device to navigate between stationary clock and traveler's clock. This project can become interactive by adding buttons to change the speed or even adding sensors (GPS, Accelerometer).
+The idea is to design a clock that receives speed (or percentage relative to the speed of light) and calculates time dilation to show how time would feel when travelling at that speed. The idea is to have two of the same devices, one for each twin on the example, and change the speed on one of them to be close to the speed of light. After one minute on stationary clock, you can compare both and see how many "ticks" are left on each. 
 
 <img src="./einsteins_clock.jpg">
 
@@ -190,7 +190,9 @@ https://www.youtube.com/watch?v=u5Xrk0aN-iY
 
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
-
+The same solution can be implemented with two different modes on the same device to navigate between stationary clock and traveler's clock. 
+This project can become interactive by adding buttons to change the speed or even adding sensors (GPS, Accelerometer).
+I would like to change the UI to make improve the visual communication
 
 # Prep for Part 2
 
