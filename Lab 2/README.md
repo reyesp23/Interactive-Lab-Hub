@@ -171,9 +171,13 @@ The source code was modified to show the time centered in the screen.
 
 ## Part E. Einstein's Clock
 
-Let's look at a classic example: There is a set of twins that live on earth, they both have the exact same clocks in sync. One of the twins is a space traveler and leaves on mission traveling at 95% the speed of light. Upon returning the traveler's clock has measured ten years. However, when reuniting whith his brother, the twin that stayed on Earth has aged 32 years. This is explained due to the fact that the traveler was going at relativistic speeds and therefore his clock goes slower when compared against time on Earth. "Time is not absolute, it depends on the reference frame. 
+There is a set of twins that live on earth, they both have the exact same clocks in sync. One of the twins is a space traveler and leaves on mission traveling at 95% the speed of light. Upon returning the traveler's clock has measured ten years. However, when reuniting whith his brother, the twin that stayed on Earth has aged 32 years. This is explained due to the fact that the traveler was going at relativistic speeds and therefore his clock goes slower when compared against time on Earth. Time is not absolute, it depends on the reference frame. 
 
-When I first learned about this topic on my physics classes, it was a mindblowing concept and I found it really hard to visualize. We are used to see time as a constant and as a matter of fact, it is not. The motivation behind my project is to design an interactive way to visualize how time would pass for the traveler as compared to time on Earth. 
+This concept is known as time dilation and its formula is simple to compute. The relationship between the time perceived for both twins is given by the following equation: 
+
+<img src="./time_dilation.png">
+
+When I first learned about this topic on my physics classes, it was mindblowing and I found it really hard to visualize. We are used to see time as a constant and as a matter of fact, it is not. The motivation behind my project is to design an interactive way to visualize how time would pass for the traveler as compared to time on Earth. 
 
 The idea is to design a clock that receives speed (or percentage relative to the speed of light) and calculates time dilation to show how time would feel when travelling at that speed. The idea is to have two of the same devices, one for each twin on the example, and change the speed on one of them to be close to the speed of light. After one minute on stationary clock, you can compare both and see how many "ticks" are left on each. The same solution can be implemented with two different modes on the same device to navigate between stationary clock and traveler's clock. This project can become interactive by adding buttons to change the speed or even adding sensors (GPS, Accelerometer).
 
