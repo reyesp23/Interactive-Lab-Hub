@@ -205,9 +205,16 @@ One of the players can wear the device and run as fast as he can around the park
 
 # Prep for Part 2
 
-1. Pick up remaining parts for kit.
+1. Pick up remaining parts for kit. -> Ready
 
 2. Look at and give feedback on the Part G. for at least 2 other people in the class (and get 2 people to comment on your Part G!)
+
+#### Feedback received
+
+"Wow your idea is so cool and creative !! The idea was a bit obscure but you did a great job explaining and making it visual. One thing that was not clear me was what the percentage was in the corner of the screen, what did this represent ? Perhaps add some labels to the interface. I am so curious as to how you will make this interactive and I can't wait to see!"
+
+"You shold add a joystick to control the speed, as in videogames"
+
 
 # Lab 2 Part 2
 
@@ -218,5 +225,20 @@ Modify the code from last week's lab to make a new visual interface for your new
 As always, make sure you document contributions and ideas from others explicitly in your writeup.
 
 You are permitted (but not required) to work in groups and share a turn in; you are expected to make equal contribution on any group work you do, and N people's group project should look like N times the work of a single person's lab. What each person did should be explicitly documented. Make sure the page for the group turn in is linked to your Interactive Lab Hub page. 
+
+#### Updated interaction
+
+I decided to make the demonstration interactive by connecting the buttons to allow the user to select a percentage of the speed. I used the feedback to make the UI more clear and I separated the flow into separate screens: 1. Welcome screen, 2. select speed, 3. countdown with time dilation
+I programmed a simple a state machine in python to jump between the two states of the program: Home (where the user selects the speed) and RUN (where the time interaction occurs)
+
+I extended the functionality by adding support for joystick. If the user has no joystick connected he can use button interactions to complete the flow. (Use upper button to increase speed, lower button to decrease speed and press both buttons to start the game. While the game is running, press and hold any button to abort. 
+
+When the joystick is connected, the speed can be controlled by moving the joystick forward or backward and the game is started by pressing down.
+
+<img src="./einsteins_clock_p2.jpg">
+
+#### Updated interaction video
+https://youtu.be/z6GVXcTD5W0
+
 
 
