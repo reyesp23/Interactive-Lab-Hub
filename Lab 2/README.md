@@ -169,36 +169,39 @@ The source code was modified to show the time centered in the screen.
 
 <img src="./screen_clock.jpg">
 
-## Part E.
-### Modify the barebones clock to make it your own
+## Part E. Einstein's Clock
 
-Does time have to be linear?  How do you measure a year? [In daylights? In midnights? In cups of coffee?](https://www.youtube.com/watch?v=wsj15wPpjLY)
+There is a set of twins that live on earth, they both have the exact same clocks in sync. One of the twins is a space traveler and leaves on mission traveling at 95% the speed of light. Upon returning the traveler's clock has measured ten years. However, when reuniting whith his brother, the twin that stayed on Earth has aged 32 years. This is explained due to the fact that the traveler was going at relativistic speeds and therefore his clock goes slower when compared against time on Earth. Time is not absolute, it depends on the reference frame. 
 
-Can you make time interactive? You can look in `screen_test.py` for examples for how to use the buttons.
+This concept is known as time dilation and its formula is simple to compute. The relationship between the time perceived for both twins is given by the following equation: 
 
-**We strongly discourage and will reject the results of literal digital or analog clock display.**
+<img src="./time_dilation.png">
 
-\*\*\***A copy of your code should be in your Lab 2 Github repo.**\*\*\*
+When I first learned about this topic on my physics classes, it was mindblowing and I found it really hard to visualize. We are used to see time as a constant and as a matter of fact, it is not. The motivation behind my project is to design an interactive way to visualize how time would pass for the traveler as compared to time on Earth. 
 
-After you edit and work on the scripts for Lab 2, the files should be upload back to your own GitHub repo! You can push to your personal github repo by adding the files here, commiting and pushing.
+The idea is to design a clock that receives speed (or percentage relative to the speed of light) and calculates time dilation to show how time would feel when travelling at that speed. The idea is to have two of the same devices, one for each twin on the example, and change the speed on one of them to be close to the speed of light. After one minute on stationary clock, you can compare both and see how many "ticks" are left on each. 
 
-```
-(circuitpython) pi@ixe00:~/Interactive-Lab-Hub/Lab 2 $ git add .
-(circuitpython) pi@ixe00:~/Interactive-Lab-Hub/Lab 2 $ git commit -m 'your commit message here'
-(circuitpython) pi@ixe00:~/Interactive-Lab-Hub/Lab 2 $ git push
-```
-
-After that, Git will ask you to login to your GitHub account to push the updates online, you will be asked to provide your GitHub user name and password. Remember to use the "Personal Access Tokens" you set up in Part A as the password instead of your account one! Go on your GitHub repo with your laptop, you should be able to see the updated files from your Pi!
-
+<img src="./einsteins_clock.jpg">
 
 ## Part F. 
 ## Make a short video of your modified barebones PiClock
 
-\*\*\***Take a video of your PiClock.**\*\*\*
+https://www.youtube.com/watch?v=u5Xrk0aN-iY
 
 ## Part G. 
-## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
+## Future improvements
 
+The buttons can be used to change the percentage of the speed of light and see how time channges
+
+I would like to change the UI to make improve the visual communication
+
+The main interaction is designed for two players (or more) players to replicate the example of the twin brothers since time dilation only makes sense when there is a stationary clock (or reference point) and a moving clock. However the same solution can be implemented with two different modes on the same device to navigate between stationary clock and traveler's clock to allow single players to experiment with the concept.
+
+## Interaction ideas
+
+This project can become interactive by adding sensors to measure (calculate) speed.
+
+One of the players can wear the device and run as fast as he can around the park. When he returns and compares the clock against the stationary player he sees that less time has passed for him. He has more "ticks" left in his clock. We can adjust the formula with a factor to make it sensisble to the measured (human) speeds instead of relativistic speeds for demonstration purposes.
 
 # Prep for Part 2
 
