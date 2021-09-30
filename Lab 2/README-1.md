@@ -16,7 +16,9 @@ Be generous in acknowledging their contributions! And also recognizing any other
 ### Get your kit
 If you are remote but in the US, let the teaching team know you need the parts mailed.
 
+
 If you are in New York, you can come to the campus and pick up your parts. If you have not picked up your parts by Thursday lab you should come to Tata 351.
+
 
 ### Set up your Lab 2
 
@@ -26,9 +28,14 @@ If you are in New York, you can come to the campus and pick up your parts. If yo
 
   ```
   Interactive-Lab-Hub $ git remote add upstream https://github.com/FAR-Lab/Interactive-Lab-Hub.git
-  Interactive-Lab-Hub $ git pull upstream Spring2021
+  Interactive-Lab-Hub $ git pull upstream Fall2021
+  ```
+  
+  The reason why we are adding a upstream with **course lab-hub** instead of yours is because the local Interactive-Lab-Hub folder is linked with your own git repo already. Try typing ``git remote -v`` and you should see there is the origin branch with your own git repo. We here add the upstream to get latest updates from the teaching team by pulling the **course lab-hub** to your local machine. After your local folder got the latest updates, push them to your remote git repo by running:
+  
+  ```
   Interactive-Lab-Hub $ git add .
-  Interactive-Lab-Hub $ git commit -m'merge'
+  Interactive-Lab-Hub $ git commit -m "message"
   Interactive-Lab-Hub $ git push
   ```
   Your local and remote should now be up to date with the most recent files.
@@ -74,6 +81,7 @@ pi@ixe00:~ $ source circuitpython/bin/activate
 The support for password authentication of GitHub was removed on August 13, 2021. That is, in order to link and sync your own lab-hub repo with your Pi, you will have to set up a "Personal Access Tokens" to act as the password for your GitHub account on your Pi when using git command, such as `git clone` and `git push`.
 
 Following the steps listed [here](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) from GitHub to set up a token. Depends on your preference, you can set up and select the scopes, or permissions, you would like to grant the token. This token will act as your GitHub password later when you use the terminal on your Pi to sync files with your lab-hub repo.
+
 
 ## Part B. 
 ### Try out the Command Line Clock
