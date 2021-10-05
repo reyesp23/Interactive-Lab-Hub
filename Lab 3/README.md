@@ -68,6 +68,10 @@ One thing you might need to pay attention to is the audio input setting of Pi. S
 
 \*\***Write your own shell file that verbally asks for a numerical based input (such as a phone number, zipcode, number of pets, etc) and records the answer the respondent provides.**\*\*
 
+I wrote a small program to ask the user for the zipcode and register it using speech recognition. You can find the code in the whats_your_zipcode folder, the interaction is shown in the folllowing video:
+
+https://www.youtube.com/watch?v=v6OmRfXstAc
+
 Bonus Activity:
 
 If you are really excited about Speech to Text, you can try out [Mozilla DeepSpeech](https://github.com/mozilla/DeepSpeech) and [voice2json](http://voice2json.org/install.html)
@@ -110,6 +114,8 @@ Write out what you imagine the dialogue to be. Use cards, post-its, or whatever 
 ### Acting out the dialogue
 
 Find a partner, and *without sharing the script with your partner* try out the dialogue you've designed, where you (as the device designer) act as the device you are designing.  Please record this interaction (for example, using Zoom's record feature).
+
+[![Watch the video](video-cover.png)](https://www.youtube.com/watch?v=gw_91keCSJM)
 
 \*\***Describe if the dialogue seemed different than what you imagined when it was acted out, and how.**\*\*
 
