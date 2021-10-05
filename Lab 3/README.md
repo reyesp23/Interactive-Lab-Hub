@@ -105,6 +105,11 @@ From a remote browser on the same network, check to make sure your webserver is 
 
 Storyboard and/or use a Verplank diagram to design a speech-enabled device. (Stuck? Make a device that talks for dogs. If that is too stupid, find an application that is better than that.) 
 
+For this part of the Lab I worked with [Mayur Bhandary](https://github.com/mayurbhandary) 
+
+We decided to create a speech interaction to help the users overcome fear of speaking in public and improve their presentation skills. How? The device will record their speech and analyze it to give feedback such as "Avoid saying <Um>, "Like", "You Know", "Ah". 
+In the storyboard it is depicted how the user is first giving a presentation but he is really nervous and starts saying a lot of filler words. After practicing with the device he gets better and better and on the last frame he is giving an amazing presentations to his peers!
+
 <img src="./storyboard.jpg">
 
 Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses. 
