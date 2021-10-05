@@ -115,6 +115,9 @@ In the storyboard it is depicted how the user is first giving a presentation but
 Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses. 
 
 \*\***Please describe and document your process.**\*\*
+  
+To come up with the idea we explored several areas where speech recognition could be useful besides traditional applications like voice commands. We realate to this problem since we are always a bit nervous when having to present in public and we want to get better at it. 
+We used a whiteboard to do a quick sketch of the storyboard.
 
 ### Acting out the dialogue
 
@@ -123,6 +126,8 @@ Find a partner, and *without sharing the script with your partner* try out the d
 [![Watch the video](video-cover.png)](https://www.youtube.com/watch?v=gw_91keCSJM)
 
 \*\***Describe if the dialogue seemed different than what you imagined when it was acted out, and how.**\*\*
+   
+The sketch was prettery similar to what we planned. We asked the participant to give a presentation on a random topic. Then me, "The device" started correcting him to help him avoid filler word.
 
 ### Wizarding with the Pi (optional)
 In the [demo directory](./demo), you will find an example Wizard of Oz project. In that project, you can see how audio and sensor data is streamed from the Pi to a wizard controller that runs in the browser.  You may use this demo code as a template. By running the `app.py` script, you can see how audio and sensor data (Adafruit MPU-6050 6-DoF Accel and Gyro Sensor) is streamed from the Pi to a wizard controller that runs in the browser `http://<YouPiIPAddress>:5000`. You can control what the system says from the controller as well!
