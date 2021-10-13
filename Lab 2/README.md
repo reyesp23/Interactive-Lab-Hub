@@ -187,6 +187,12 @@ This concept is known as time dilation and its formula is simple to compute. The
 
 When I first learned about this topic on my physics classes, it was mindblowing and I found it really hard to visualize. We are used to see time as a constant and as a matter of fact, it is not. The motivation behind my project is to design an interactive way to visualize how time would pass for the traveler as compared to time on Earth. 
 
+I created a storyboard that demonstrates this concept
+
+<img src="./storyboard.PNG">
+
+Design
+
 The idea is to design a clock that receives speed (or percentage relative to the speed of light) and calculates time dilation to show how time would feel when travelling at that speed. The idea is to have two of the same devices, one for each twin on the example, and change the speed on one of them to be close to the speed of light. After one minute on stationary clock, you can compare both and see how many "ticks" are left on each. 
 
 <img src="./einsteins_clock.jpg">
