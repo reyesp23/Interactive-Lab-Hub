@@ -39,7 +39,6 @@ In the storyboard it is depicted how the user is first giving a presentation but
 
 Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses. 
 
-
 **Karen: Good afternoon, my name is Karen and today I'll uhh**
 >Device: Don't say "Uhh"
 
@@ -69,7 +68,6 @@ The device's responses are generated on the fly. For our interview, Mayur preten
    
 The sketch was pretty similar to what we planned. We asked the participant to give a presentation on a random topic. Then "The device" started correcting Mayur to help him avoid filler words. We noticed that the interruptions are a bit distracting while practicing the presentation and that this part of the interaction could be made better. 
 
-
 # Lab 3 Part 2
 
 For Part 2, you will redesign the interaction with the speech-enabled device using the data collected, as well as feedback from part 1.
@@ -81,8 +79,9 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
 Interrupting the user while they are practicing a speach is a bit intrusive. It could potentially be useful for someone who needs immediate feedback, but it would also be nice to have a mode where the feedback is given in aggregate at the end. The above mock script could be modified to include the following:
    
 **Karen(louder): plants contain like chloroplasts in their cells
+  
 >Device: Don't say like
-  ...
+
 >Device: Great job on your presentation! You only said "like" 1 time and "um" twice. This is a great improvement! Keep up the good work. 
    
 2. What are other modes of interaction _beyond speech_ that you might also use to clarify how to interact?
@@ -97,6 +96,11 @@ We imagine this as a wearable (wrist) device or an app for an existing smart wat
    
 3. Make a new storyboard, diagram and/or script based on these reflections.
   
+**Karen is presenting without moving her hands
+  
+>Device: Use your hands to express emotion to your audience
+  
+<img src="./storyboard3.jpeg">
 
 ## Prototype your system
 
