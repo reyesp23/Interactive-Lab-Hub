@@ -33,7 +33,7 @@ Group Members: [Patricio Reyes](https://github.com/reyesp23), [Mayur Bhandary](h
 We decided to create a speech interaction to help the users overcome fear of speaking in public and improve their presentation skills. How? The device will record their speech and analyze it to give feedback such as "Avoid saying <Um>, "Like", "You Know", "Ah". 
 In the storyboard it is depicted how the user is first giving a presentation but he is really nervous and starts saying a lot of filler words. After practicing with the device he gets better and better and on the last frame he is giving an amazing presentations to his peers!
 
-<img src="./storyboard2.jpeg">
+<img src="./storyboard.jpg">
 
 Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses. 
 
@@ -90,6 +90,8 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
    Fidgeting can distract from the presentation and make it difficult to focus on the speaker. We can incorporate motion information from the accelerometer to let the user know when they are moving around too much. The device would apply the same corrections to the user when they are moving around too much. 
    
 3. Make a new storyboard, diagram and/or script based on these reflections.
+  
+  <img src="./storyboard2.jpg">
 
 ## Prototype your system
 
