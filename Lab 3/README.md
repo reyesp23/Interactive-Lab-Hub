@@ -91,7 +91,7 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
    
 3. Make a new storyboard, diagram and/or script based on these reflections.
   
-  <img src="./storyboard2.jpg">
+  <img src="./storyboard2.jpeg">
 
 ## Prototype your system
 
