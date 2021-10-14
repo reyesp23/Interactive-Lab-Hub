@@ -33,8 +33,6 @@ Group Members: [Patricio Reyes](https://github.com/reyesp23), [Mayur Bhandary](h
 We decided to create a speech interaction to help the users overcome fear of speaking in public and improve their presentation skills. How? The device will record their speech and analyze it to give feedback such as "Avoid saying <Um>, "Like", "You Know", "Ah". 
 In the storyboard it is depicted how the user is first giving a presentation but he is really nervous and starts saying a lot of filler words. After practicing with the device he gets better and better and on the last frame he is giving an amazing presentations to his peers!
 
-<img src="./storyboard.jpg">
-
 <img src="./storyboard2.jpeg">
 
 Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses. 
