@@ -1,53 +1,6 @@
-# Chatterboxes
-[![Watch the video](https://user-images.githubusercontent.com/1128669/135009222-111fe522-e6ba-46ad-b6dc-d1633d21129c.png)](https://www.youtube.com/embed/Q8FWzLMobx0?start=19)
-
-In this lab, we want you to design interaction with a speech-enabled device--something that listens and talks to you. This device can do anything *but* control lights (since we already did that in Lab 1).  First, we want you first to storyboard what you imagine the conversational interaction to be like. Then, you will use wizarding techniques to elicit examples of what people might say, ask, or respond.  We then want you to use the examples collected from at least two other people to inform the redesign of the device.
-
-We will focus on **audio** as the main modality for interaction to start; these general techniques can be extended to **video**, **haptics** or other interactive mechanisms in the second part of the Lab.
-
-## Prep for Part 1: Get the Latest Content and Pick up Additional Parts 
-
-### Pick up Additional Parts
-
-As mentioned during the class, we ordered additional mini microphone for Lab 3. Also, a new part that has finally arrived is encoder! Please remember to pick them up from the TA.
-
-### Get the Latest Content
-
-As always, pull updates from the class Interactive-Lab-Hub to both your Pi and your own GitHub repo. As we discussed in the class, there are 2 ways you can do so:
-
-**\[recommended\]**Option 1: On the Pi, `cd` to your `Interactive-Lab-Hub`, pull the updates from upstream (class lab-hub) and push the updates back to your own GitHub repo. You will need the *personal access token* for this.
-
-```
-pi@ixe00:~$ cd Interactive-Lab-Hub
-pi@ixe00:~/Interactive-Lab-Hub $ git pull upstream Fall2021
-pi@ixe00:~/Interactive-Lab-Hub $ git add .
-pi@ixe00:~/Interactive-Lab-Hub $ git commit -m "get lab3 updates"
-pi@ixe00:~/Interactive-Lab-Hub $ git push
-```
-
-Option 2: On your your own GitHub repo, [create pull request](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2021Fall/readings/Submitting%20Labs.md) to get updates from the class Interactive-Lab-Hub. After you have latest updates online, go on your Pi, `cd` to your `Interactive-Lab-Hub` and use `git pull` to get updates from your own GitHub repo.
-
 ## Part 1.
 ### Text to Speech 
 
-In this part of lab, we are going to start peeking into the world of audio on your Pi! 
-
-We will be using a USB microphone, and the speaker on your webcamera. (Originally we intended to use the microphone on the web camera, but it does not seem to work on Linux.) In the home directory of your Pi, there is a folder called `text2speech` containing several shell scripts. `cd` to the folder and list out all the files by `ls`:
-
-```
-pi@ixe00:~/text2speech $ ls
-Download        festival_demo.sh  GoogleTTS_demo.sh  pico2text_demo.sh
-espeak_demo.sh  flite_demo.sh     lookdave.wav
-```
-
-You can run these shell files by typing `./filename`, for example, typing `./espeak_demo.sh` and see what happens. Take some time to look at each script and see how it works. You can see a script by typing `cat filename`. For instance:
-
-```
-pi@ixe00:~/text2speech $ cat festival_demo.sh 
-#from: https://elinux.org/RPi_Text_to_Speech_(Speech_Synthesis)#Festival_Text_to_Speech
-
-echo "Just what do you think you're doing, Dave?" | festival --tts
-```
 
 Now, you might wonder what exactly is a `.sh` file? Typically, a `.sh` file is a shell script which you can execute in a terminal. The example files we offer here are for you to figure out the ways to play with audio on your Pi!
 
@@ -72,40 +25,10 @@ I wrote a small program to ask the user for the zipcode and register it using sp
 
 https://www.youtube.com/watch?v=v6OmRfXstAc
 
-Bonus Activity:
-
-If you are really excited about Speech to Text, you can try out [Mozilla DeepSpeech](https://github.com/mozilla/DeepSpeech) and [voice2json](http://voice2json.org/install.html)
-There is an included [dspeech](./dspeech) demo  on the Pi. If you're interested in trying it out, we suggest you create a seperarate virutal environment for it . Create a new Python virtual environment by typing the following commands.
-
-```
-pi@ixe00:~ $ virtualenv dspeechexercise
-pi@ixe00:~ $ source dspeechexercise/bin/activate
-(dspeechexercise) pi@ixe00:~ $ 
-```
-
-### Serving Pages
-
-In Lab 1, we served a webpage with flask. In this lab, you may find it useful to serve a webpage for the controller on a remote device. Here is a simple example of a webserver.
-
-```
-pi@ixe00:~/Interactive-Lab-Hub/Lab 3 $ python server.py
- * Serving Flask app "server" (lazy loading)
- * Environment: production
-   WARNING: This is a development server. Do not use it in a production deployment.
-   Use a production WSGI server instead.
- * Debug mode: on
- * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 162-573-883
-```
-From a remote browser on the same network, check to make sure your webserver is working by going to `http://<YourPiIPAddress>:5000`. You should be able to see "Hello World" on the webpage.
 
 ### Storyboard
 
-Storyboard and/or use a Verplank diagram to design a speech-enabled device. (Stuck? Make a device that talks for dogs. If that is too stupid, find an application that is better than that.) 
-
-For this part of the Lab I worked with [Mayur Bhandary](https://github.com/mayurbhandary) 
+Group Members: [Patricio Reyes](https://github.com/reyesp23), [Mayur Bhandary](https://github.com/mayurbhandary) 
 
 We decided to create a speech interaction to help the users overcome fear of speaking in public and improve their presentation skills. How? The device will record their speech and analyze it to give feedback such as "Avoid saying <Um>, "Like", "You Know", "Ah". 
 In the storyboard it is depicted how the user is first giving a presentation but he is really nervous and starts saying a lot of filler words. After practicing with the device he gets better and better and on the last frame he is giving an amazing presentations to his peers!
@@ -114,10 +37,20 @@ In the storyboard it is depicted how the user is first giving a presentation but
 
 Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses. 
 
+
+**Karen: Good afternoon, my name is Karen and today I'll uhh**
+>Device: Don't say Uhh
+**Karen: Today I'll be talking about photosynthesis
+>Device: Speak Slower
+**Karen(slower): Photosynthesis is how plants convert light into energy
+>Device: Speak Louder
+**Karen(louder): plants contain like chloroplasts in their cells
+>Device: Don't say like
+
 \*\***Please describe and document your process.**\*\*
   
-To come up with the idea we explored several areas where speech recognition could be useful besides traditional applications like voice commands. We relate to this problem since we are always a bit nervous when having to present in public and we want to get better at it. 
-We used a whiteboard to do a quick sketch of the storyboard.
+To come up with the idea we explored several areas where speech recognition could be useful besides traditional applications like voice commands. We relate to this problem since we are always a bit nervous when having to present in public and we want to get better at it. It would be great to get immediate feedback on the way that we speak so that we can speak in a more confident and concise manner. The device would listen to our dialog in real-time as we prepare for for presentatinos and interviews and give us feedback directly. Alternatively, it could record live presentations and later give us feedback without interrupting us.
+
 
 ### Acting out the dialogue
 
@@ -125,14 +58,12 @@ Find a partner, and *without sharing the script with your partner* try out the d
 
 [![Watch the video](video-cover.png)](https://www.youtube.com/watch?v=gw_91keCSJM)
 
+The device's responses are generated on the fly. For our interview, Mayur pretended to give a presentation on how to cook chicken, and Patricio, aka the device, interrupted Mayur to correct his phrasing (the corrections are unknown to Mayur as the user in this video).
+
 \*\***Describe if the dialogue seemed different than what you imagined when it was acted out, and how.**\*\*
    
-The sketch was pretty similar to what we planned. We asked the participant to give a presentation on a random topic. Then me, "The device" started correcting him to help him avoid filler word.
+The sketch was pretty similar to what we planned. We asked the participant to give a presentation on a random topic. Then "The device" started correcting Mayur to help him avoid filler words. We noticed that the interruptions are a bit distracting while practicing the presentation and that this part of the interaction could be made better. 
 
-### Wizarding with the Pi (optional)
-In the [demo directory](./demo), you will find an example Wizard of Oz project. In that project, you can see how audio and sensor data is streamed from the Pi to a wizard controller that runs in the browser.  You may use this demo code as a template. By running the `app.py` script, you can see how audio and sensor data (Adafruit MPU-6050 6-DoF Accel and Gyro Sensor) is streamed from the Pi to a wizard controller that runs in the browser `http://<YouPiIPAddress>:5000`. You can control what the system says from the controller as well!
-
-\*\***Describe if the dialogue seemed different than what you imagined, or when acted out, when it was wizarded, and how.**\*\*
 
 # Lab 3 Part 2
 
@@ -141,7 +72,19 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
 ## Prep for Part 2
 
 1. What are concrete things that could use improvement in the design of your device? For example: wording, timing, anticipation of misunderstandings...
+   Interrupting the user while they are practicing a speach is a bit intrusive. It could potentially be useful for someone who needs immediate feedback, but it would also be nice to have a mode where the feedback is given in aggregate at the end. The above mock script could be modified to include the following:
+   
+ ...
+**Karen(louder): plants contain like chloroplasts in their cells
+>Device: Don't say like
+... continues on like this
+>Device: Great job on your presentation! You only said "like" 1 time and "um" twice. This is a great improvement! Keep up the good work. 
+   
+   
 2. What are other modes of interaction _beyond speech_ that you might also use to clarify how to interact?
+   
+   Fidgeting can distract from the presentation and make it difficult to focus on the speaker. We can incorporate motion information from the accelerometer to let the user know when they are moving around too much. The device would apply the same corrections to the user when they are moving around too much. 
+   
 3. Make a new storyboard, diagram and/or script based on these reflections.
 
 ## Prototype your system
