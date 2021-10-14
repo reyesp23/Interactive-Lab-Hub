@@ -39,13 +39,16 @@ Write out what you imagine the dialogue to be. Use cards, post-its, or whatever 
 
 
 **Karen: Good afternoon, my name is Karen and today I'll uhh**
->Device: Don't say Uhh
+>Device: Don't say "Uhh"
+
 **Karen: Today I'll be talking about photosynthesis
->Device: Speak Slower
+>Device: Speak "slower"
+
 **Karen(slower): Photosynthesis is how plants convert light into energy
->Device: Speak Louder
+>Device: Speak louder
+
 **Karen(louder): plants contain like chloroplasts in their cells
->Device: Don't say like
+>Device: Don't say "like"
 
 \*\***Please describe and document your process.**\*\*
   
@@ -95,7 +98,9 @@ The system should:
 * require participants to speak to it. 
 
 *Document how the system works*
-
+For part 2 we decided to Wizard our device. The user practices their presentation with the device while the wizard is hidden and listens to the audio streamed from the raspberry pi in a separate room. The wizard manually sends a message to the raspberry pi that instructs the user to correct their speach pattern. The message is is played over the speaker and gives the illusion that the devices is intelligently responding to the user's presentation. 
+  
+  
 *Include videos or screencaptures of both the system and the controller.*
 
 ## Test the system
@@ -104,18 +109,15 @@ Try to get at least two people to interact with your system. (Ideally, you would
 Answer the following:
 
 ### What worked well about the system and what didn't?
-\*\**your answer here*\*\*
+The microphone was not the most sensitive so the user had to stay near the device for it to work. The accelerometer data was super fast so the corrections for fidgeting were great. Overall, the device was too big and clunky. In a real system, we would want this to be highly integrated. All of the components necessary for this interaaction are available on smartphones so this could be done via an app. 
+  
 
 ### What worked well about the controller and what didn't?
-
-\*\**your answer here*\*\*
+Sending instructions to the user was very fast. We were able to prepare some phrases that could be quickly copy and pasted into the gui to send to the pi. Unfortunately, the feedback was still delayed since the audio from the microphone to the wizard is delayed. Overall the delay didn't impact the quality of the interaction too much, but in a real system the delay might be nuisance. 
 
 ### What lessons can you take away from the WoZ interactions for designing a more autonomous version of the system?
-
-\*\**your answer here*\*\*
+The WoZ interaction was good for understanding how people react to a voice enabled device. One big takeaway is that people have very high expectations for voice assistants. For example, if the suggestion is irrelevant or unintelligible, it's very frustrating to the user. It's analagous to receiving the wrong directions from a gps while driving or having Siri misunderstand you and suggest something obtuse. 
 
 
 ### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
-
-\*\**your answer here*\*\*
-
+It could be interesting to analyze the presenter's posture and facial expressions using image processing. This could help the user further enhance their presentation skills by helping them appear more confident. For example, the device could offer suggestions if they slouch or keep their hands behind their back. In terms of data, we could start off with the mechanical turk configuration and collect as many interactions as possible. We could use this data to come up with an nlp algorthm that intelligently provides speach and behavioral modifications. 
