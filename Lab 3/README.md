@@ -77,23 +77,26 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
 ## Prep for Part 2
 
 1. What are concrete things that could use improvement in the design of your device? For example: wording, timing, anticipation of misunderstandings...
-   Interrupting the user while they are practicing a speach is a bit intrusive. It could potentially be useful for someone who needs immediate feedback, but it would also be nice to have a mode where the feedback is given in aggregate at the end. The above mock script could be modified to include the following:
+  
+Interrupting the user while they are practicing a speach is a bit intrusive. It could potentially be useful for someone who needs immediate feedback, but it would also be nice to have a mode where the feedback is given in aggregate at the end. The above mock script could be modified to include the following:
    
-
 **Karen(louder): plants contain like chloroplasts in their cells
 >Device: Don't say like
-
   ...
 >Device: Great job on your presentation! You only said "like" 1 time and "um" twice. This is a great improvement! Keep up the good work. 
    
-   
 2. What are other modes of interaction _beyond speech_ that you might also use to clarify how to interact?
    
-   Fidgeting can distract from the presentation and make it difficult to focus on the speaker. We can incorporate motion information from the accelerometer to let the user know when they are moving around too much. The device would apply the same corrections to the user when they are moving around too much. 
+Non-verbal communication is also an important part of any good presentation, using accelerometer and gyroscope data we could track the hand movement to help the user improve his hand gestures while presenting.
+  
+Alos, fidgeting can distract from the presentation and make it difficult to focus on the speaker. We can incorporate motion information from the accelerometer to let the user know when they are moving around too much. The device would apply the same corrections to the user when they are moving around too much. 
+
+We imagine this as a wearable (wrist) device or an app for an existing smart watch equipped with microphone, accelerometer, gyroscope a speaker and a processing unit.
+  
+<img src="./device_sketch.jpg">
    
 3. Make a new storyboard, diagram and/or script based on these reflections.
   
-<img src="./device_sketch.jpg">
 
 ## Prototype your system
 
