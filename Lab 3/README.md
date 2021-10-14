@@ -106,6 +106,8 @@ For part 2 we decided to Wizard our device. The user practices their presentatio
 
 ## Test the system
 Try to get at least two people to interact with your system. (Ideally, you would inform them that there is a wizard _after_ the interaction, but we recognize that can be hard.)
+  
+** We got our friends Adam and Sam to interact with our device. We did not tell them that there was a wizard prior to using the device. Here is a link to a recording of Adam's interaction: [Link]()  
 
 Answer the following:
 
