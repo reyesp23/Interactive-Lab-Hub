@@ -35,6 +35,8 @@ In the storyboard it is depicted how the user is first giving a presentation but
 
 <img src="./storyboard.jpg">
 
+<img src="./storyboard2.jpeg">
+
 Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses. 
 
 
@@ -91,7 +93,7 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
    
 3. Make a new storyboard, diagram and/or script based on these reflections.
   
-  <img src="./storyboard2.jpeg">
+<img src="./device_sketch.jpg">
 
 ## Prototype your system
 
