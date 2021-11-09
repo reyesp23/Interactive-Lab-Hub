@@ -231,47 +231,62 @@ Using the accelerometer, try the following:
 
 ### Part B
 ### Construct a simple interaction.
-<img src="./storyboard.jpg">
 
 Pick one of the models you have tried, pick a class of objects, and experiment with prototyping an interaction.
 This can be as simple as the boat detector earlier.
 Try out different interaction outputs and inputs.
 
 **\*\*\*Describe and detail the interaction, as well as your experimentation here.\*\*\***
+Non-verbal communication is a really important part of language. People from all around the world use hand gestures to express different things. Sometimes, different cultures use the same hand gesture for really different meanings. This often causes misunderstandings for visitors. My motivation is to create an observant system that is able to detect hand gestures and give a description of what it means for the selected country. 
 
-### Part C
-### Test the interaction prototype
+<img src="./storyboard.jpg">
 
 <img src="./gestures.png">
 Image source: Shayanne Gal/Business Insider
 
+### Part C
+### Test the interaction prototype
+
 Now flight test your interactive prototype and **note down your observations**:
 For example:
 1. When does it what it is supposed to do?
-1. When does it fail?
-1. When it fails, why does it fail?
-1. Based on the behavior you have seen, what other scenarios could cause problems?
+When the hand is completely visible on the frame, and the gestures are not too complex
+3. When does it fail?
+It sometimes fails when finger positions overlap with each other (for example for crossed fingers. Or when there are two really similar gestures. Or when the hand is not completely visible.
+5. When it fails, why does it fail?
+Because the system relies on a 2D representation to estimate position, however our hand exists in a 3D world therfore there is not enough data to fully characterize its behaviour with just computer vision.
+7. Based on the behavior you have seen, what other scenarios could cause problems?
+If there is not enough light and contrast, the background makes it hard to distinguish the positions. When there are more hands in the frame.
 
 **\*\*\*Think about someone using the system. Describe how you think this will work.\*\*\***
 1. Are they aware of the uncertainties in the system?
-1. How bad would they be impacted by a miss classification?
-1. How could change your interactive system to address this?
-1. Are there optimizations you can try to do on your sense-making algorithm.
+They are aware since they are directly interacting with the camera and the screen. For example, they can observe if the output of the classification is unstable and changes quickly between two possible results.
+3. How bad would they be impacted by a miss classification?
+A miss classification could cause misunderstanding if the user fully trusts the system when traveling abroad.
+5. How could change your interactive system to address this?
+Give visual cues and add an interactive onboarding to help users make proper use of the tool and reduce chances ofe error.
+7. Are there optimizations you can try to do on your sense-making algorithm.
+Yes, increase the gesture mapping resolution. Or add more than one camera (from a different angle) to make it a robust and redundant system. However, for this application I don't think it is necesary to add such complexity.
 
 ### Part D
 ### Characterize your own Observant system
 
-<img src="./landmarks.png">
-
 Now that you have experimented with one or more of these sense-making systems **characterize their behavior**.
 During the lecture, we mentioned questions to help characterize a material:
 * What can you use X for?
+It can be used to detect hand gestures and translate them into words depending on the cultural context
 * What is a good environment for X?
+Good light in the room, solid background, high contrast, full hand visibility, different gestures
 * What is a bad environment for X?
+A crowded place, a lot of objects in the frame, really similar gestures
 * When will X break?
+When gestures are really similar in terms of finger position, when there is not enough visibility
 * When it breaks how will X break?
+It will output an incorrect classification, or it won't be able to classify the gesture at all 
 * What are other properties/behaviors of X?
+It works regardless of which hand you use, it works regardless of the orientation of the hand, it works regardless of the position of the hand in the frame (as long as it is visible)
 * How does X feel?
+Feels like a reliable interaction for most controlled scenarios.
 
 **\*\*\*Include a short video demonstrating the answers to these questions.\*\*\***
 
@@ -279,10 +294,10 @@ During the lecture, we mentioned questions to help characterize a material:
 
 Following exploration and reflection from Part 1, finish building your interactive system, and demonstrate it in use with a video.
 
+<img src="./landmarks.png">
 <img src="./insert_country.png">
 <img src="./it.gif">
 <img src="./us.gif">
-
 
 **\*\*\*Include a short video demonstrating the finished result.\*\*\***
 
