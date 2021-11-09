@@ -260,3 +260,6 @@ Following exploration and reflection from Part 1, finish building your interacti
 
 
 **\*\*\*Include a short video demonstrating the finished result.\*\*\***
+
+[![Watch the video](video_preview.png)](https://www.youtube.com/watch?v=mVAci2dBRLg)
+
