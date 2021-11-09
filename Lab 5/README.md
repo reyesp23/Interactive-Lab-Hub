@@ -223,6 +223,8 @@ Try out different interaction outputs and inputs.
 ### Part C
 ### Test the interaction prototype
 
+<img src="./gestures.png">
+
 Now flight test your interactive prototype and **note down your observations**:
 For example:
 1. When does it what it is supposed to do?
@@ -238,6 +240,8 @@ For example:
 
 ### Part D
 ### Characterize your own Observant system
+
+<img src="./landmarks.png">
 
 Now that you have experimented with one or more of these sense-making systems **characterize their behavior**.
 During the lecture, we mentioned questions to help characterize a material:
