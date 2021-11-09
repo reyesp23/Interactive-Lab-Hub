@@ -103,14 +103,20 @@ pi@ixe00:~/openCV-examples/object-detection $ python detect.py
 #### Contour Detection
 <img src="./OpenCVEx-1.png">
 
+Countour detection could be used for applications where the shape of the detected objects is important. For example character recognition in license plate detection.
+
 #### Face Detection
 <img src="./OpenCVEx-2.png">
 
+Could be used to detect core features of a human face such as mouth, eyes, nose and apply digital filters for apps such as instagram or SnapChat. 
+
 #### Flow Detection
 <img src="./OpenCVEx-3.png">
+Could be used to detect how pedestrian flow behaves in certain parts of the city.
 
 #### Object Detection
 <img src="./OpenCVEx-4.png">
+Used to detect objects on an image, could be uses as input for a classification system. For example, for quality control for an industrial plant.
 
 #### MediaPipe
 
@@ -156,6 +162,11 @@ Try the two main features of this script: 1) pinching for percentage control, an
 
 **\*\*\*Consider how you might use this position based approach to create an interaction, and write how you might use it on either face, hand or body pose tracking.\*\*\***
 
+- You could used this approach to detect chords being played on a musical instrument for example guitar or piano. By tracking the position of each finger with enough accuracy you could classify each hand position and translate it into a musical score. 
+- You could use body pose tracking to record movement and use it to animate a character in a virtual environment (for movie or game development)
+- You could use hand gesture detection to make a sign language translator
+
+
 (You might also consider how this notion of percentage control with hand tracking might be used in some of the physical UI you may have experimented with in the last lab, for instance in controlling a servo or rotary encoder.)
 
 
@@ -193,6 +204,14 @@ This might take a while to get fully installed. After installation, connect your
 
 <img src="./mask.gif">
 
+This is useful for classification applications, it can actually coexist with other systems such as object detection or face detection for more robust applications.
+
+Interaction example: 
+
+For example, when farmers harvest fruit they have to manually inspect and remove the bad fruits from the batch. A robotic system with computer vision could be used to detect these fruits and use a physical actuator to remove them. This would reduce effort and time for the farmers.
+
+This Teachable Machines tool could be used to train the model by feeding it with images of good and bad fruit and their labels. It could then infer the main features and make decisions on its own. 
+
 *Don't forget to run ```deactivate``` to end the Teachable Machines demo, and to reactivate with ```source tmachine/bin/activate``` when you want to use it again.*
 
 
@@ -224,6 +243,7 @@ Try out different interaction outputs and inputs.
 ### Test the interaction prototype
 
 <img src="./gestures.png">
+Image source: Shayanne Gal/Business Insider
 
 Now flight test your interactive prototype and **note down your observations**:
 For example:
