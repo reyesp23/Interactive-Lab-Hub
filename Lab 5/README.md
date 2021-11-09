@@ -212,6 +212,7 @@ Using the accelerometer, try the following:
 
 ### Part B
 ### Construct a simple interaction.
+<img src="./storyboard.jpg">
 
 Pick one of the models you have tried, pick a class of objects, and experiment with prototyping an interaction.
 This can be as simple as the boat detector earlier.
