@@ -14,7 +14,7 @@ def run_example():
         return
     print("\nLED Stick ready!")
     
-    my_stick.set_all_LED_brightness(15)
+    my_stick.set_all_LED_brightness(5)
 
     while True:
         

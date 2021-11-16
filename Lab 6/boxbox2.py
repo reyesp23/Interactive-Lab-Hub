@@ -12,29 +12,26 @@ my_stick = qwiic_led_stick.QwiicLEDStick()
 if my_stick.begin() == False: print("\nThe Qwiic LED Stick isn't connected to the sytsem.")
 my_stick.set_all_LED_brightness(10)
 
-topic = 'IDD/imuTest'
+topic_send = 'IDD/imuTest/d2'
+topic_rec = 'IDD/imuTest/d1'
 
 def on_connect(client, userdata, flags, rc):
     print("Connected")
-    client.subscribe(topic)
+    client.subscribe(topic_rec)
 
 def on_message(client, userdata, msg):
     val = msg.payload.decode('UTF-8')
     rounded = round(float(val) * 1/2)
     display(rounded)
-    # Turn on all the LEDs to white
-    #my_stick.set_all_LED_brightness(10)
 
 def display(value):
-    # Create color arrays because we want to turn on whole string of LEDs at one time
     LED_length = 10
     red_list = [0] * LED_length
     green_list = [0] * LED_length
     blue_list = [0] * LED_length
     
-    # This for loop will repeat for each pixel of the LED Stick
     for i in range(0, value):
-        red_list[i] = 255
+        blue_list[i] = 255
     my_stick.set_all_LED_unique_color(red_list, green_list, blue_list, LED_length)
  
 
@@ -51,6 +48,6 @@ client.on_message = on_message
 while True:
     client.loop()
     val = mpu.acceleration
-    client.publish(topic, abs(val[0]))
+    client.publish(topic_send, abs(val[0]))
     time.sleep(0.25)
  
