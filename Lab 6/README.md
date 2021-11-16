@@ -94,6 +94,7 @@ Once connected, you should be able to see all the messages under the IDD topic. 
 
 ![image](https://user-images.githubusercontent.com/29494260/141883864-57087d6a-f3df-41f0-8536-94330a1c6605.png)
 
+![image](https://user-images.githubusercontent.com/29494260/141884471-b45d443c-2de5-44d6-aa0a-65f8843d123b.png)
 
 
 ### Part C
@@ -162,8 +163,11 @@ Of course not! You can go to [https://one-true-colornet.glitch.me/](https://one-
 Find at least one class (more are okay) partner, and design a distributed application together based on the exercise we asked you to do in this lab.
 
 **\*\*\*1. Explain your design\*\*\*** For example, if you made a remote controlled banana piano, explain why anyone would want such a thing.
+We made a device for physical interaction in long distance relationships. Both of us are in long distance relationships so we thought it would be nice to have a way to interact with our partners from afar beyond text messages and video chat. The device is meant to be integrated into any item that the partner might interact with such as a pillow or plush toy. For this protoype, we used boxes to illistrate the functionality of the device. 
 
 **\*\*\*2. Diagram the architecture of the system.\*\*\*** Be clear to document where input, output and computation occur, and label all parts and connections. For example, where is the banana, who is the banana player, where does the sound get played, and who is listening to the banana music?
+
+![image](https://user-images.githubusercontent.com/29494260/141883864-57087d6a-f3df-41f0-8536-94330a1c6605.png)
 
 **\*\*\*3. Build a working prototype of the system.\*\*\*** Do think about the user interface: if someone encountered these bananas somewhere in the wild, would they know how to interact with them? Should they know what to expect?
 
