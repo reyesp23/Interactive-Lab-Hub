@@ -12,6 +12,6 @@
 
 ## Open Studio
 
-<img src="./open_studio.jpg">
-<img src="./render1.png">
-<img src="./render2.png">
+<img src="./images/open_studio.jpg">
+<img src="./images/render1.png">
+<img src="./images/render2.png">
