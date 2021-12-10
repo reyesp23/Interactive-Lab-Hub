@@ -18,3 +18,4 @@
 <img src="./images/poster1.png">
 <img src="./images/poster2.png">
 <img src="./images/proto.jpg">
+<img src="./images/diagram.jpg">
