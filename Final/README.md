@@ -19,3 +19,4 @@
 <img src="./images/poster2.png">
 <img src="./images/proto.jpg">
 <img src="./images/diagram.jpg">
+<img src="./images/prototype.gif">
