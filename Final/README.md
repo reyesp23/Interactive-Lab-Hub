@@ -1,16 +1,5 @@
 # Retailiot
 
-## Motivation
-
-## Idea
-
-## Exploration
-
-## Components
-
-## Architecture
-
-## Open Studio
 
 <img src="./images/open_studio.jpg">
 <img src="./images/render1.png">
