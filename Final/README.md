@@ -1,5 +1,5 @@
 # Retailiot - The Smart Clothing Lock
-
+Patricio Reyes, Mayur Bhandary, Aman Prasad
 ## Overview
 The rise of e-commerce has been a growing threat to in-person shopping for over a decade, and the current pandemic has only exacerbated the situation for traditional offline retail stores. Despite the convenience of online shopping, customers are still frustrated with the experience of buying clothing online. Important properties of clothing such as size, texture, and quality cannot be communicated digitally. When users receive a product that doesn't fit them correctly or is not what they expected, the burden of returning the item is bestowed upon them. Furthermore, only a few e-commerce giants and retailers are capable of constructing a supply chain that can promise reasonable delivery times and free returns. For these reasons, we decided to build a checkout experience that augments the in-person shopping experience with a mobile checkout flow. Users can use our device to purchase clothing without speaking to a representative or waiting in line at a checkout counter.  
 
@@ -19,13 +19,23 @@ We used cardboard to create a functional prototype of our device and collect use
 
 ## Open Studio 
 <img src="./images/open_studio.jpg">
+
 We participated in open studio to demonstrate our project and get feedback from attendees. Overall, the device was well received and the participants felt that they could see themselves using it to checkout at retail stores. 
 
-One question that we repeatedly received was what does the user do with the device after it has been unlocked? Our suggestion was to have baskets to drop the unlocked devices into. The attendees seemed satisfied with this answer, but we acknowledged that this makes the experience a bit clunkier. An alternative that we thought through was to eliminate the device for cheaper items and only introduce the NFC sticker to the existing tags on the clothing. This would allow on the spot checkout without the device, but it would not have the added security of a clothing lock. One attendee suggested that we target high end retailers who frequently use heavy duty clothing locks with their premium products. 
+
+One question that we repeatedly received was what does the user do with the device after it has been unlocked? Our suggestion was to have baskets to drop the unlocked devices into. The attendees seemed satisfied with this answer, but we acknowledge that this makes the experience a bit clunkier. An alternative that we thought through was to eliminate the device for cheaper items and introduce the NFC sticker to the existing tags on the clothing. This would allow on the spot checkout without the device, but it would not have the added security of a clothing lock. One attendee suggested that we target high end retailers who frequently use heavy duty clothing locks with their premium products. 
+
+Other feedback included interaction nuances, technical challenges, and ethical considerations:
+- If a customer purcheses many items at once, it might become annoying to self-checkout each one. 
+- Some clothing manufacturers take packaging very seriously. The aesthetics of the lock will be very important in gaining adoption. 
+- The existing RFID tags on clothes would still be necessary in order to trigger the alarm at the door for unpaid goods. 
+- This product might eliminate cashier jobs. 
 
 <img src="./images/render1.png">
 <img src="./images/render2.png">
 <img src="./images/poster1.png">
 <img src="./images/poster2.png">
+
+We generated high fidelity concept prototypes of our envisioned device. Our design draws inpiration from popular tag-like devices such as Tile and AirTags.   
 
 
