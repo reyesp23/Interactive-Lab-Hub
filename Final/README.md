@@ -8,11 +8,18 @@ Retailiot is a smart clothing lock for mobile checkouts at shopping racks. The d
 ## System Diagram
 <img src="./images/diagram.jpg">
 
-The system consists of the device, an app, a database, and a backend. Each smart lock has an NFC tag that stores the id for the device. When the user scans the device with with the app, the app retrieves product information from the database for the id that was scanned. After the user completes the checkout flow with their preferred payment method, the app sends a GET request to the backend hosted on Heroku to unlock the device. The backend publishes a message to an MQTT topic that the device is subscribed to which signals the device to unlock itself. 
+The system consists of the device, an app, a database, and a backend. Each smart lock has an NFC tag that stores the id for the device. When the user scans the device with the app, the app retrieves product information from the database for the id that was scanned. After the user completes the checkout flow with their preferred payment method, the app sends a GET request to the backend hosted on Heroku to unlock the device. The backend publishes a message to an MQTT topic that the device is subscribed to which signals the device to unlock itself. 
 
-## Prototype
+## Storyboard
+
+## Prototyping
+
+![image](https://user-images.githubusercontent.com/29494260/145903745-2df20ec6-af7e-4dc6-9c03-055805cfb184.png)
+Our first iteration of the device was very crude. We used this to determine whether a servo motor and safety pin would be strong enough to secure the clothing. After experimenting on a sock, we determined that this mechanism should be sufficient for our prototype.  
+
 <img src="./images/prototype.gif">
-We used cardboard to create a functional prototype of our device and collect user feedback. The device is shaped like a tile with a slit across the corner to insert clothing. Since we used the servo moter to actuate the needle, we created another slit to allow the motor arm to move freely when locking and unlocking the device. 
+We also used cardboard to create a full functional prototype of our device and collect feedback. The device is shaped like a tile with a slit across the corner to insert clothing. Since we used the servo moter to actuate the needle, we created another slit to allow the motor arm to move freely when locking and unlocking the device. 
+
 
 ## Code
 
