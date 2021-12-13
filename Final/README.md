@@ -15,13 +15,18 @@ The system consists of the device, an app, a database, and a backend. Each smart
 We used cardboard to create a functional prototype of our device and collect user feedback. The device is shaped like a tile with a slit across the corner to insert clothing. Since we used the servo moter to actuate the needle, we created another slit to allow the motor arm to move freely when locking and unlocking the device. 
 
 ## Code
- - Describe device, backend, and app code
+
+#### Device:
+- The device code can be found in the files smart_lock.py and text_draw.py. The smart_lock.py script simply subscribes to an MQTT topic corresponding to its device id ('123' was used for our prototype device) and moves the servo arm when it receives the lock and unlock messgages. '1' was used to lock the device and '0' was used to unlock it. The text_draw.py script was used to display text on the device screen. 
+
+#### Backend:
+
+#### App:
 
 ## Open Studio 
 <img src="./images/open_studio.jpg">
 
 We participated in open studio to demonstrate our project and get feedback from attendees. Overall, the device was well received and the participants felt that they could see themselves using it to checkout at retail stores. 
-
 
 One question that we repeatedly received was what does the user do with the device after it has been unlocked? Our suggestion was to have baskets to drop the unlocked devices into. The attendees seemed satisfied with this answer, but we acknowledge that this makes the experience a bit clunkier. An alternative that we thought through was to eliminate the device for cheaper items and introduce the NFC sticker to the existing tags on the clothing. This would allow on the spot checkout without the device, but it would not have the added security of a clothing lock. One attendee suggested that we target high end retailers who frequently use heavy duty clothing locks with their premium products. 
 
