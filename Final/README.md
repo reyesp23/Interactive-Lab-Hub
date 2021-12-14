@@ -6,24 +6,38 @@ The rise of e-commerce has been a growing threat to in-person shopping for over 
 Retailiot is a smart clothing lock for mobile checkouts at shopping racks. The device uses a motorized locking mechanism to pierce the article of clothing with a needle in order to attach itself. Once the device is attached, it can only be unlocked when a customer purchases it. Customers can interact with the device directly by using a mobile app to scan the device via NFC and pay for it with their prefered payment method. The purpose of this device is to reduce checkout times at retail stores and make it easier for merchants to secure their products.  
 
 ## System Diagram
-<img src="./images/diagram.jpg">
+<img src="./images/diagram.jpg" style="width:800px;"/>
 
 The system consists of the device, an app, a database, and a backend. Each smart lock has an NFC tag that stores the id for the device. When the user scans the device with the app, the app retrieves product information from the database for the id that was scanned. After the user completes the checkout flow with their preferred payment method, the app sends a GET request to the backend hosted on Heroku to unlock the device. The backend publishes a message to an MQTT topic that the device is subscribed to which signals the device to unlock itself. 
 
 ## Storyboard
-<img src="./images/story-board1.png">
-<img src="./images/story-board2.png">
-<img src="./images/story-board3.png">
-<img src="./images/story-board4.png">
+
+<img src="./images/story-board1.png" style="width:500px;"/>
+
+A customer enters the store in search of new clothing. 
+
+<img src="./images/story-board2.png" style="width:500px;">
+
+The customer seemlessly inspects the clothing with the smart locks to prevent theft. 
+
+<img src="./images/story-board3.png" style="width:500px;">
+
+The customer tries on the clothing and decides they are happy with it. 
+
+<img src="./images/story-board4.png" style="width:500px;">
+
+The customer purchases the clothing with their smart phone which automatically disengages the smart lock. 
 
 ## Prototyping
 
-<img src="./images/rough_prototype.png">
+<img src="./images/rough_prototype.png" style="width:500px;">
 Our first iteration of the device was very crude. We used this to determine whether a servo motor and safety pin would be strong enough to secure the clothing. After experimenting on a sock, we determined that this mechanism should be sufficient for our prototype.  
 
-<img src="./images/prototype.gif">
-We also used cardboard to create a full functional prototype of our device and collect feedback. The device is shaped like a tile with a slit across the corner to insert clothing. Since we used the servo moter to actuate the needle, we created another slit to allow the motor arm to move freely when locking and unlocking the device. 
+<img src="./images/prototype.gif" style="width:500px;">
+We used cardboard to create a fully functional prototype of our device and collect feedback. The device is shaped like a tile with a slit across the corner to insert clothing. Since we used the servo moter to actuate the needle, we created another slit to allow the motor arm to move freely when locking and unlocking the device. 
 
+<img src="./images/complete_prototype.png" style="width:500px;">
+In our final prototype, we included a screen to display information about the article of clothing (Locked/Unlock status, Price, type of clothing). We also mounted the device on a traditional clothing tag so that it blends into the shopping experience. 
 
 ## Code
 
@@ -38,7 +52,7 @@ We also used cardboard to create a full functional prototype of our device and c
 - The app (written in Swift), scans an NFC tag that lives on the lock, and uses that to pull up information about the product that the lock is secured to. The user is then able to use the app to "pay" for the product, subsequently releasing the product from the lock. In the future, we aim to request the product information from the backend (which will pull product information from the database). We also aim to incorporate the payment system, along with a "cart" mechanic which would allow shoppers to purchase multiple products at once.
 
 ## Open Studio 
-<img src="./images/open_studio.jpg">
+<img src="./images/open_studio.jpg" style="width:500px;">
 
 We participated in open studio to demonstrate our project and get feedback from attendees. Overall, the device was well received and the participants felt that they could see themselves using it to checkout at retail stores. 
 
@@ -50,10 +64,10 @@ Other feedback included interaction nuances, technical challenges, and ethical c
 - The existing RFID tags on clothes would still be necessary in order to trigger the alarm at the door for unpaid goods. 
 - This product might eliminate cashier jobs. 
 
-<img src="./images/render1.png">
-<img src="./images/render2.png">
-<img src="./images/poster1.png">
-<img src="./images/poster2.png">
+<img src="./images/render1.png" style="width:500px;">
+<img src="./images/render2.png" style="width:500px;">
+<img src="./images/poster1.png" style="width:500px;">
+<img src="./images/poster2.png" style="width:500px;">
 
 We generated high fidelity concept prototypes of our envisioned device. Our design draws inpiration from popular tag-like devices such as Tile and AirTags.   
 
