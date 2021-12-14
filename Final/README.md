@@ -27,8 +27,10 @@ We also used cardboard to create a full functional prototype of our device and c
 - The device code can be found in the files smart_lock.py and text_draw.py. The smart_lock.py script simply subscribes to an MQTT topic corresponding to its device id ('123' was used for our prototype device) and moves the servo arm when it receives the lock and unlock messgages. '1' was used to lock the device and '0' was used to unlock it. The text_draw.py script was used to display text on the device screen. 
 
 #### Backend:
+- The backend utilzes FastAPI to create an API wrapper for the MQTT publishing functions. The software is deployed to Heroku such that it can be accessed via the mobile application. When the mobile application sends a request to the API to toggle the lock for a particular device, the server issues an MQTT message to that device. We plan to expand this backend to incorporate a database system that links devices to products, and also completes payments. The goal is to trigger an unlock once a payment is successfully completed, and to trigger a lock once the merchant decides to secure the lock.
 
 #### App:
+- The app (written in Swift), scans an NFC tag that lives on the lock, and uses that to pull up information about the product that the lock is secured to. The user is then able to use the app to "pay" for the product, subsequently releasing the product from the lock. In the future, we aim to request the product information from the backend (which will pull product information from the database). We also aim to incorporate the payment system, along with a "cart" mechanic which would allow shoppers to purchase multiple products at once.
 
 ## Open Studio 
 <img src="./images/open_studio.jpg">
