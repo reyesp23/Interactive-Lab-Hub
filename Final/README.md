@@ -77,9 +77,8 @@ Other feedback included interaction nuances, technical challenges, and ethical c
   - This device might be better suited for stores where only a few items are purchased at a time.
 - Some clothing manufacturers take packaging very seriously. The aesthetics of the lock will be very important in gaining adoption.
   - There might be opportunities to work closely with manufacturers to create custom tags for their specific clothing items.  
-- The existing RFID tags on clothes would still be necessary in order to trigger the alarm at the door for unpaid goods.
-  -  
-- NFC requires close proximity with the tag. QR codes don't have this constraint and they are more widely adopted. 
+- NFC requires close proximity with the tag. QR codes don't have this constraint and they are more widely adopted.
+  - This is a fair criticism, and we would like to create a version of this product that uses QR code in the future. NFC has the benefit being able to work offline so we still think there is room for it in our device. 
 - This product might eliminate cashier jobs. 
   - Retail is already being threatened by e-commerce. We believe this device could help bring customers back to traditional retail and actually increase the number of retail jobs. This device serves a customer segment that wants to quickly grab an item and leave, but the need for customer service and cash registers will still exist. 
  
