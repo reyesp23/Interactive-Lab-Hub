@@ -83,11 +83,25 @@ Other feedback included interaction nuances, technical challenges, and ethical c
   - Retail is already being threatened by e-commerce. We believe this device could help bring customers back to traditional retail and actually increase the number of retail jobs. This device serves a customer segment that wants to quickly grab an item and leave, but the need for customer service and cash registers will still exist. 
  
 
-<img src="./images/render1.png" style="width:500px;">
-<img src="./images/render2.png" style="width:500px;">
-<img src="./images/poster1.png" style="width:500px;">
-<img src="./images/poster2.png" style="width:500px;">
+We generated high fidelity concept prototypes of our envisioned device. 
+Our design draws inpiration from popular tag-like devices such as Tile and AirTags.
 
-We generated high fidelity concept prototypes of our envisioned device. Our design draws inpiration from popular tag-like devices such as Tile and AirTags.   
+<img src="./images/render1.png" style="width:500px;">
+
+The device could come in multiple colors to match the clothing that it is placed on. Traditional clothing locks are an eye-sore, but our device is designed to keep the focus on the clothing. 
+
+<img src="./images/render2.png" style="width:500px;">
+
+The mechanics of the lock can be concealed in a compact form factor. 
+
+<img src="./images/poster1.png" style="width:500px;">
+
+A simple app is used to interact with our device and seamlesly make purchases.
+
+<img src="./images/poster2.png" style="width:500px;">
+   
+## Reflection
+
+We wanted to work on a project that combined elements of security and distributed systems. In completing this project we learned how users interact with both of these technologies. We learned that the locking mechanism of real shopping locks is hard to implement. When we researched these devices, we found that cashiers have a clamp that uses strong magnets to unlock the device. In order for our device to be reliable, it must be difficult to take off of the clothing. On the other hand, the device must be easy to unlock once it is paid for so that the user interaction is smooth. We will need to iterate on our locking mechanism to design for both of these constraints in our actual product. 
 
 
